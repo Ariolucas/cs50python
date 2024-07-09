@@ -12,7 +12,7 @@ with open("program_names.csv") as file:
         else:
             counts[favor] = 1
 def get_value(Language):
-    return counts[Lanuage]
+    return counts[Language]
 
 for favor in sorted(counts, key=get_value, reverse=True):
     print(f"{favor}: {counts[favor]}")
