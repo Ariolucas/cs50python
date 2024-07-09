@@ -6,12 +6,13 @@ with open("program_names.csv") as file:
     PHP, Ruby, Python = 0, 0, 0
     for row in reader:
         favor = row["Language"]
-        if favor == "python":
-            python += 1
+        if favor == "Python":
+            Python += 1
         elif favor == "PHP":
             PHP += 1
         elif favor == "Ruby":
             Ruby += 1
+
 print(f"PHP:  {PHP}")
 print(f"Python:  {Python}")
 print(f"Ruby: {Ruby}")
