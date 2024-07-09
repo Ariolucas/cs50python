@@ -4,6 +4,6 @@ import csv
 with open("program_names.csv") as file:
     reader  = csv.DictReader(file)
     for row in reader:
-        favor = row["language"]
+        favor = row["Language"]
         print(favor)
 
