@@ -2,7 +2,8 @@ import csv
 
 #prints the second column row[1] being programming language
 with open("program_names.csv") as file:
-    reader  = csv.reader(file)
+    reader  = csv.DictReader(file)
     for row in reader:
-        favor = 
+        favor = row["language"]
+        print(favor)
 
