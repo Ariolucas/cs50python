@@ -9,9 +9,7 @@ with open("program_names.csv") as file:
         if favor == "Python":
             Python += 1
         elif favor == "PHP":
-            PHP += 1
-        elif favor == "Ruby":
-            Ruby += 1
+            
 
 print(f"PHP:  {PHP}")
 print(f"Python:  {Python}")
