@@ -3,17 +3,17 @@ import csv
 #prints the second column row[1] being programming language
 with open("program_names.csv") as file:
     reader  = csv.DictReader(file)
-    PHP, Ruby, Python = 0, 0, 0,
+    php, ruby, python = 0, 0, 0,
     for row in reader:
-        favor = row["Language"]
+        favor = row["Language"].strip().lower()
         if favor == "python":
-            Python += 1
+            python += 1
         elif favor == "PHP":
-            PHP += 1
+            php += 1
         elif favor == "Ruby":
-            Ruby += 1
+            ruby += 1
 
-print(f"PHP:  {PHP}")
-print(f"Python:  {Python}")
-print(f"Ruby: {Ruby}")
+print(f"PHP:  {php}")
+print(f"Python:  {python}")
+print(f"Ruby: {ruby}")
 
