@@ -6,7 +6,7 @@ with open("program_names.csv") as file:
     counts = {}
     php, ruby, python = 0, 0, 0,
     for row in reader:
-        favor = row["Language"].strip().lower()
+        favor = row["Program"].strip().lower()
         if favor in counts:
             counts[favor] += 1
         else:
@@ -14,5 +14,5 @@ with open("program_names.csv") as file:
 def get_value(Language):
     return counts[Language]
 
-for favor in sorted(counts, key=lambda Language: counts[Language], reverse=True):
+for favor in sorted(counts, key=lambda program: counts[program], reverse=True):
     print(f"{favor}: {counts[favor]}")
