@@ -14,5 +14,5 @@ with open("program_names.csv") as file:
 def get_value(Language):
     return counts[Language]
 
-for favor in sorted(counts, key=lambda: counts[L], reverse=True):
+for favor in sorted(counts, key=lambda Language: counts[Language], reverse=True):
     print(f"{favor}: {counts[favor]}")
