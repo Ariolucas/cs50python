@@ -13,4 +13,4 @@ with open("program_names.csv") as file:
             counts[favor] = 1
 
 for favor in counts:
-    print(f"{favot}: {counts[favor]}")
+    print(f"{favor}: {counts[favor]}")
